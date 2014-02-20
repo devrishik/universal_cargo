@@ -7,26 +7,26 @@
 	<link rel="stylesheet" href="owl.carousel/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="owl.carousel/owl-carousel/owl.theme.css">
 	<link href="index.css" rel="stylesheet">
-	<style type="text/css" media="screen">
-		.owl-item{
-			position: relative;
-			overflow: hidden;
-			/*width: 400px;	*/
-			height: 400px;
-			width: 800px;
+	<style type="text/css" media="screen">	
+		.home_container{
 			text-align: center;
 		}
 		.item{
-			/*height: 400px;*/
-			min-height: 400px;
-			min-width: 800px;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			margin: 0 auto;
+			height: 100px;
+			display: inline-block;
 		}
-		.owl-buttons {
-			display: none;
+		.about {
+			display: inline-block;
+			float: left;
+		}		
+		.home {
+			display: inline-block;
+			width: 100px;
+		}
+		.home_content{
+			vertical-align: bottom;
+			display: inline-block;
+			width: 600px;
 		}
 	</style>
 </head>
@@ -34,23 +34,12 @@
 	<!-- <img src="images/cargo_ship_wallpaper_3.jpg" alt=""> -->
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand active" href="#">Universal Cargo</a>
-    </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-      	<li><a class="active" >Home</a></li>
-        <li><a onclick="document.getElementById('about').style.display='';"
-href="" onclick="return false;">About Us</a></li>
+      	<li><a class="navbar-brand" href="">Universal Cargo</a></li>
+        <li><a class="active">About Us</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
@@ -59,16 +48,35 @@ href="" onclick="return false;">About Us</a></li>
 </nav>
 	<!-- <div class="image"></div> -->
 	<div class="container">
-	<div id="home">
-		<div id="image_swirl" class="owl-carousel">
-			  <div><img src="images/cargo-ship.jpg" class="item"/></div>
-			  <div><img src="images/cargo.jpg" class="item"/></div>
-			  <div><img src="images/cargo_ship_wallpaper_3.jpg" class="item"/></div>
-			  <div><img src="images/front-boat.jpg" class="item"/></div>
-		</div>
-	</div>	
-	<div id="about" style="display: none;">
-		LOL
+	<div class="home_container">
+	<div class="home">
+			  <img src="images/logo.jpg" class="item"/>
+	</div>
+	<div class="home_content">We offer well-established global freight and trade network, with a single-source solution to manage and transport freight with an extensive team of experts supervising operations.
+
+Universal Cargo offers the best fit solutions with its unparalleled access to a vast agent network of air, ocean, rail or road transport facilities, all of which provides its customers with faster and wider access to vital markets globally.</div>
+</div>
+	<div class="about">
+		<h3>About</h3>
+		<p>
+Universal Cargo has been providing specialized services in the areas of International
+
+logistics and freight forwarding with over many years of expertise in this arena. We offer 
+
+a large variety of cargo and freight forwarding related services throughout the globe. With 
+
+headquarter at Delhi in India and with offices and associates all over the country as well as 
+
+abroad; we provide our unique set of services at all locations across the globe. Our company 
+
+is dedicated to the enhancement of customer care and satisfaction through the means of a 
+
+proficient and efficient cargo services of all kind. Our company grew incredibly quickly in 
+
+just few years, and had expanded to provide services to number of companies and big groups 
+
+with our professionally trained Teams at all locations.
+</p>
 	</div>
 	</div>
 	<script src="bootstrap-3.1.1/js/jquery.js"></script>
