@@ -7,71 +7,7 @@
 	<link rel="stylesheet" href="owl.carousel/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="owl.carousel/owl-carousel/owl.theme.css">
 	<link href="index.css" rel="stylesheet">
-	<style type="text/css" media="screen">	
-		.container ul{
-			list-style: none;
-		}
-		a{
-			color: #333;
-			text-decoration: none;
-		}
-		a:hover{
-			text-decoration: none;
-		}
-		.container li:before{
-			content: "-->    ";
-			text-decoration: none;
-			display: inline;
-		}
-		.container li:hover{
-			margin-left: 4px;
-			-webkit-transition: all 0.2s ease-in-out;
-			transition: all 0.2s ease-in-out;
-		}
-		.home_container{
-			text-align: center;
-		}
-		.owl-item{
- 			position: relative;
- 			overflow: hidden;
- 			/*width: 400px;	*/
- 			height: 400px;
- 			width: 800px;
- 		}
- 		.owl-images{
-		   min-width: 400px;
-		   min-height: 800px;
-		   left: -25%;
-		   top: -25%; 
-		   margin-left: -150px;
-		   margin-top: -150px;
-		}
-		.item{
-			height: 100px;
-			display: inline-block;
-		}
-		.about {
-			/*padding: 1px;
-			border: 1px solid;
-			width: 50%;*/
-			display: inline-block;
-			float: left;
-		}		
-		.home {
-			display: inline-block;
-			width: 100px;
-		}
-		.home_content{
-			vertical-align: bottom;
-			display: inline-block;
-			width: 600px;
-		}
-		.content{
-		}
-		.owl-buttons {
- 			display: none;
- 		}
-	</style>
+
 </head>
 <body>
 	<!-- <img src="images/cargo_ship_wallpaper_3.jpg" alt=""> -->
@@ -163,7 +99,7 @@ with our professionally trained Teams at all locations.
 		</p>
 	</div>
 
-	<div class="services content" id="services">
+	<div class="content" id="services">
 		<h3><a href="#services">Services</a></h3>
 		<p>
 		Universal Cargo has a well-established global freight and trade network, offering a 
@@ -178,7 +114,7 @@ with our professionally trained Teams at all locations.
 	</p>
 	</div>
 
-	<div class="freight content" id="air_freight">
+	<div class="content" id="air_freight">
 		<h3><a href="#air_freight">Air Freight</a></h3>
 		<p>
 			Universal Cargo is one the leading package delivery companies in Delhi, India with quality 
@@ -274,7 +210,7 @@ with our professionally trained Teams at all locations.
 	</ul>
 	</div>
 
-	<div class="road content" id="road">
+	<div class="content" id="road">
 	<a href="#road"><h3>Road Transport </h3></a>
 	<p>
 	 We also arrange for transportation of goods from the shippers to the consolidation 
@@ -293,7 +229,7 @@ with our professionally trained Teams at all locations.
 	</p>
 	</div>
 
-	<div class="others content">
+	<div class="content">
 	<h3>Our Other Customized Services:</h3>
 	<ul>	
 		<li>Immediate collection for urgent shipments</li>
@@ -306,15 +242,11 @@ with our professionally trained Teams at all locations.
 		<li>Dedicated vehicle charter for special deliveries</li>
 	</ul>
 	</div>
-	<hr>
 	<footer class="footer">
 		<hr>
-          <ul>
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="{% url 'terms_of_use' %}">Terms of Use</a></li>
-            <li>&copy; OPHIO</li>
-          </ul>
+         	<span><a href="index.html">Home</a></span>
+            <span><a href="#about">About</a></span>
+            <span>&copy; Universal Cargo</span>
 	</footer>
 	</div>
 	<script src="bootstrap-3.1.1/js/jquery.js"></script>
