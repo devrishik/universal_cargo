@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link href="bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css" media="screen">
+		#map_canvas {
+			height: 400px;
+		}
+		body {
+			margin: 0;
+		}
+		.content_left {
+		    width:180px;
+		    clear: left;
+		}
+		.content_right {
+		    margin-left: 3em;
+		    clear: right;
+		}
+		.contact {
+		    margin-top: 5em;
+		}
+		.contact span {
+	        padding:10px;
+	        float:left;
+	    }
+	</style>
+</head>
+<body>
+
+
+<div id="map_canvas"></div>
+<div class="container">
+	<div class="contact">
+            <span class="content_left"> Email us:</span>
+            <span class="bold_content content_right">
+                <a href="mailto:contactus@ophio.co.in">info@universalcargo.co.in</a>
+            </span>
+
+            <span class="content_left"> Visit us:</span>
+            <span class="content_right">
+                <a href="index.html"> Universal Cargo<br></a>
+					J 3/57, 1st<br>
+					Floor, A7, <br>
+					Khirki Extension, Malviya Nagar <br>
+					New Delhi: - 110017 <br>
+            </span>
+        </div>
+</div>
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-ui-map/3.0-rc1/jquery.ui.map.js"></script>
+<script>
+var universalcargo = new google.maps.LatLng(28.535351,77.21485),
+           center = new google.maps.LatLng(28.535351,77.21485),
+           marker,
+           map;
+
+var mapOptions = {
+       zoom: 16,
+       mapTypeId: google.maps.MapTypeId.ROADMAP,
+       center: center,
+       scrollwheel:false,
+       styles:[ {stylers:[{lightness:40},{gamma: 1.0},{saturation:-40}]}],
+       disableDefaultUI: true,
+       draggable: false,
+    };
+
+   map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+
+   // var image = $('#map_canvas').attr('data-marker');
+
+   setTimeout(function(){
+        marker = new google.maps.Marker({
+               map:map,
+               draggable:false,
+               animation: google.maps.Animation.DROP,
+               position: universalcargo,
+               optimized: false,
+               flat: true,
+               zIndex: 10000
+        });
+        /* Massive hack, because Chrome decided to render the icon when
+        it renders the map it causes a flicker placing the icon in its
+        final location before the drop animation, so to get around this
+        don't set an icon (above) and instead set it after a slight
+        delay, so Chrome can do it's rendering then set the image
+        */
+   }, 1400);
+</script>
+<script src="bootstrap-3.1.1/js/jquery.js"></script>
+<script src="bootstrap-3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
